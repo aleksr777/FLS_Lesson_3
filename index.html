@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>"Смертельная битва CSS-селекторов" - главная страница.</title>
+	</head>
+	<!-- Прошу не ругать за обилие тегов <br>, это временно. 
+		После изучения свойств margin и padding, так делать больше не буду. -->
+	<body>
+		<header class="header">
+			<img src="img/title.png" alt="Логотип игры Мортал Комбат!" width="200" id="start">
+			
+			<h1 class="main-title">СМЕРТЕЛЬНАЯ БИТВА CSS-СЕЛЕКТОРОВ НАЧИНАЕТСЯ!!!</h1>
+			
+			<p>В этой битве мы узнаем, какие CSS-селекторы имеют приоритет над другими!</p>
+			<nav class="menu">
+				<ul>
+					<li>
+						<a href="#fight-1"> = Бой равнозначных селекторов = </a>
+					</li>
+					<li>
+						<a href="#fight-2"> = Cелектор класса VS Селектор тега = </a>
+					</li>
+					<li>
+						<a href="#fight-3"> = Cелектор класса VS Селектор класса с уточнением = </a>
+					</li>
+					<li>
+						<a href="#fight-4"> = Селектор класса VS Селектор с совмещёнными классами = </a>
+					</li>
+					<li>
+						<a href="#fight-5"> = Селектор с совмещёнными классами VS Селектор идентификатора = </a>
+					</li>
+					<li>
+						<a href="#fight-6"> = Главный босс VS Селектор идентификатора = </a>
+					</li>
+					<li>
+						<a href="#story"> = История = </a>
+					</li>
+					<li>
+						<a href="#list-of-characters"> = Список персонажей игры = </a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main">
+			<br><br>
+			<h2 id="fight-1">БОЙ РАВНОЗНАЧНЫХ СЕЛЕКТОРОВ</h2>
+			<img src="img/scorpion_vs_subzero_fight.png" alt="Заставка перед боем скорпиона и сабзиро" width="300">
+			<h3>HTML-код:</h3>
+			<img src="img/scorpion-vs-sub-zero-html.png" alt="скриншот кода">
+			<h3>CSS-код:</h3>
+			<img src="img/scorpion-vs-sub-zero-css.png" alt="скриншот кода">
+			<p>Здесь всё просто. Побеждает тот селектор,<br> что находится ниже в коде таблицы CSS.</p>
+			<p class="scorpion-vs-sub-zero">!!! Побеждает селектор "Sub-zero" !!!></p>
+			<img src="img/scorpion_vs_subzero_fatality.gif" alt="Скорпион делает фаталити сабзиро" width="300">
+			<br><br>
+			<a href="#start">== Вернуться в главное меню ==</a>
+			<br><br>
+			<h2 id="fight-2">CЕЛЕКТОР КЛАССА VS СЕЛЕКТОР ТЕГА</h2>
+			<img src="img/sonya_vs_liu_kang_fight.png" alt="Заставка перед боем Сони против Лю Кенга" width="300">
+			<h3>HTML-код:</h3>
+			<img src="img/sonya_vs_liu_kang_html.png" alt="скриншот кода">
+			<h3>CSS-код:</h3>
+			<img src="img/sonya_vs_liu_kang_css.png" alt="скриншот кода">
+			<p>Селектор класса приоритетнее селектора тега!</p>
+			<p class="sonya">!!! Побеждает селектор "Sonya" !!!</p>
+			<img src="img/sonya_vs_liu_kang_fatality.gif" alt="Соня делает фаталити Лю Кенгу" width="300">
+			<br><br>
+			<a href="#start">== Вернуться в главное меню ==</a>
+			<br><br>
+			<h2 id="fight-3">CЕЛЕКТОР КЛАССА VS СЕЛЕКТОР КЛАССА С УТОЧНЕНИЕМ</h2>
+			<img src="img/kano_vs_sonya_fight.jpg" alt="Заставка перед боем Кано против Сони" width="300">
+			<h3>HTML-код:</h3>
+			<img src="img/kano_vs_sonya_html.png" alt="скриншот кода">
+			<h3>CSS-код:</h3>
+			<img src="img/kano_vs_sonya_css.png" alt="скриншот кода">
+			<div class="sonya">Селектор класса c уточнением (обращение к тегам span с этим классом)<br> имеет приоритет над
+				селектором с тем же классом без уточнения.</div>
+			<p><span class="sonya">!!! Побеждает селектор "Kano"!!!</span></p>
+			<img src="img/kano_vs_sonya_fatality.gif" alt="Кано делает фаталити Соне" width="300">
+			<br><br>
+			<a href="#start">== Вернуться в главное меню ==</a>
+			<br><br>
+			<h2 id="fight-4">СЕЛЕКТОР КЛАССА VS СЕЛЕКТОР С СОВМЕЩЁННЫМИ КЛАССАМИ</h2>
+			<img src="img/kitana_vs_reptile_fight.png" alt="Заставка перед боем Китаны против Рептилии" width="300">
+			<h3>HTML-код:</h3>
+			<img src="img/kitana_vs_reptile_html.png" alt="скриншот кода">
+			<h3>CSS-код:</h3>
+			<img src="img/kitana_vs_reptile_css.png" alt="скриншот кода">
+			<p class="kitana1">Селектор с совмещёнными классами имеет приоритет<br>
+			<span class="kitana2">над обычными селекторами класса!</span></p>
+			<p class="kitana1 kitana2">!!! Побеждает селектор "Reptile"!!!</p>
+			<img src="img/kitana_vs_reptile_fatality.gif" alt="Рептилия делает фаталити Китане" width="300">
+			<br><br>
+			<a href="#start">== Вернуться в главное меню ==</a>
+			<br><br>
+			<h2 id="fight-5">СЕЛЕКТОР С СОВМЕЩЁННЫМИ КЛАССАМИ VS СЕЛЕКТОР ИДЕНТИФИКАТОРА</h2>
+			<img src="img/shang_tsung_vs_liu_kang_fight.png" alt="Заставка перед боем Шансунга против Лю Кенга" width="300">
+			<h3>HTML-код:</h3>
+			<img src="img/shang_tsung_vs_liu_kang_html.png" alt="скриншот кода">
+			<h3>CSS-код:</h3>
+			<img src="img/shang_tsung_vs_liu_kang_css.png" alt="скриншот кода">
+			<div class="liu-kang sonya">Селектор идентификатора всегда находится в приоритете<br> над всеми другими селекторами таблицы CSS!
+			<p id="shang_tsung" class="liu-kang sonya">!!! Побеждает селектор "Shang Tsung"!!!</p></div>
+			<img src="img/shang_tsung_vs_liu_kang_fatality.gif" alt="Шасунг делает фаталити Лю Кенгу" width="300">
+			<br><br>
+			<a href="#start">== Вернуться в главное меню ==</a>
+			<br><br>
+			<h2 id="fight-6">ГЛАВНЫЙ БОСС VS СЕЛЕКТОР ИДЕНТИФИКАТОРА</h2>
+			<img src="img/shao_kahn_fight.png" alt="Главный босс Шаокан" width="300">
+			<h3>HTML-код:</h3>
+			<img src="img/shao_kahn_html.png" alt="скриншот кода">
+			<h3>CSS-код:</h3>
+			<img src="img/shao_kahn_css.png" alt="скриншот кода">
+			<p>Главный босс - это стиль, встроенный в тег кода HTML!<br> Этому боссу не может противостоять
+			ни один селектор<br> таблицы СSS, даже селектор идентификатора!<br>
+			<!--Встроенный стиль "Shao Kahn"-->
+			<span id="id-selector" style="color: #60009C">!!! Побеждает "Shao Kahn" !!!</span></p>
+			<img src="img/shao_kahn_fatality.gif" alt="Шаокан убивает противника" width="300">
+			<br>
+			<a href="#start">== Вернуться в главное меню ==</a>
+			<br><br>
+
+			<h2 id="story">История.</h2>
+			<div class="story-mk">
+				<p class="story-mk__paragraph-1">Однажды Старший Бог Земного Царства Шиннок обезумел от власти. Он выступил против своих собратьев и решил, что жители Земного Царства должны поклоняться только ему. Однако бог низшего ранга, Райден, смог его победить и запечатать в Преисподней. Тогда Шиннок объединился с таинственным странствующим колдуном Куан Чином и вдвоем они подчинили себе этот проклятый мир. Бесчисленные годы Шиннок ждал возможности вернуться в Земное Царство и отомстить.</p>
+				<p class="story-mk__paragraph-2">Битва богов была такой яростной, что разорвала планету и вызвала разломы в реальности. Через эти разломы раса Заурианов (людей-рептилий, эволюционировавших из динозавров) смогла спастись бегством и найти безопасный дом в мире Затерра. Все верно, гнев Шиннока убил динозавров.</p>
+				<p class="story-mk__paragraph-3">В мире под названием Эдения богу и защитнику Аргус стали являться видения масштабной битвы, которая однажды вызовет армагеддон во всех мирах. Вместе со своей женой, волшебницей Делией, он решил погрузить своих сыновей Тейвена и Дейгона в сон. План был таков, что однажды они проснутся и отправятся на поиски особого оружия, убьют элементаля Блейза и это поможет им одолеть всех воинов в той самой масштабной битве. Сын, который победит в бою, займет место Аргуса в роли защитника Эдении.</p>	
+				<div class="story-mk__paragraph-4"><p>Тем временем Внешним миром правил Король Драконов Онага. Он не только обладал невероятной силой, но и командовал неудержимой армией. Но однажды его предал его советник Шао Кан — он отравил Онагу и занял его место. Армия Онаги отказалась подчиниться Шао Кану — и воины мумифицировали себя, чтобы вернуться под командование Онаги, когда его воскресят.</div>
+				<p class="story-mk__paragraph-5"><span>Шао Кана это не остановило</span> — он завоевал множество миров, включая <span>Затерру</span>. Вновь и вновь его чемпионы побеждали в Смертельной Битве и его мир сливался с бесчисленным количеством других. Вскоре присоединилась и Эдения. Шао Кан убил правителя этого мира Короля Джеррода и забрал его жену и дочь. Однако королева Синдел не захотела жить с Шао Каном и наложила на себя руки. Тогда Шао Кан решил вырастить маленькую Китану и превратить ее в идеальную убийцу.</p>
+				<p class="story-mk__paragraph-6">
+					Шао Кан завоевал 
+					<span class="story-mk__paragraph-6-level-1">
+						народ воинов Ош-Текк. Их правитель 
+						<span class="story-mk__paragraph-6-level-2">
+							Котал Кетц
+						</span> подчинился завоевателю, но в тайне отправил своего сына в 
+						<span class="story-mk__paragraph-6-level-2">
+							Земное Царство
+						</span>.
+					</span> 
+					<span class="story-mk__paragraph-6-level-1">
+						Там он нашел цивилизацию майя и стал для них богом войны и жертвоприношений. Однако со временем его племя вымерло и он вернулся во Внешний Мир.Чтобы уберечь Внешний Мир от завоевания 
+						<span class="story-mk__paragraph-6-level-2">
+							Райден
+						</span> 
+						открыл секту шаолиньских монахов — общество Белого лотоса — где обучались воины для сражений в 
+						<span class="story-mk__paragraph-6-level-2">
+							Смертельной Битве
+						</span>.
+					</span> 
+					Величайшим воином был Великий Кунг Лао — он победил Шан Цзуна, колдуна на службе Шао Кана. Однако позже он пал от рук Горо — четырехрукого получеловека-полудракона.
+				</p>
+				<p class="story-mk__paragraph-7">
+					Горо веками был чемпионом турниров и 
+					<span class="story-mk__paragraph-7-level-1">
+						Шан Цзун видел 
+						<span class="story-mk__paragraph-7-level-2">
+							в нем
+						</span> 
+						угрозу.
+					</span> 
+						Перед его последним 
+					<span class="story-mk__paragraph-7-level-1">
+							турниром	он нанял стрелка 
+							<span class="story-mk__paragraph-7-level-2">
+								Эррона Блэка
+							</span>
+							, чтобы тот убил Горо. 
+					</span>
+					За выполнение заказа Блэку открылся секрет долголетия и он фактически стал бессмертным...
+				</p>
+			</div>
+			<br><br>
+			<h2 id="list-of-characters">Список персонажей игры:</h2>
+			<div class="list-of-fighters">
+				<ul id="ul-lvl-1">
+					<li class="lvl-2">Liu Kang</li>
+					<li class="lvl-2">Sub-zero</li>
+					<li class="lvl-2">
+						<p class="lvl-3">Kano</p>
+						<p class="lvl-3">Scorpion</p>
+						<p class="lvl-3">Reptile</p>
+					</li>
+				</ul>
+				<ul>
+					<li>Kitana</li>
+					<li>
+						<p>Sonya</p>
+						<p>Shao Kahn</p>
+						<p>Shang Tsung</p>
+						<p> и другие...</p>
+					</li>
+				</ul>
+			</div>
+		</main>
+		<br><br>
+		<footer class="footer">
+			<img src="img/img_footer.gif" alt="Персонажи игры танцуют" width="500"><br>
+			<a href="https://yandex.ru/search/?lr=20657&text=%D0%BC%D0%BE%D1%80%D1%82%D0%B0%D0%BB+%D0%BA%D0%BE%D0%BC%D0%B1%D0%B0%D1%82" target="_blank"><img src="img/yandex.jpg" alt="логотип Яндекс"></a>
+			<a href="https://www.google.com/search?q=Мортал+Комбат&ei=HDL2YZfpDpP8rgTQ3r7wCg&ved=0ahUKEwiX5_2w7tj1AhUTvosKHVCvD64Q4dUDCA0&uact=5&oq=Мортал+Комбат&gs_lcp=Cgdnd3Mtd2l6EAMyCAguEIAEELEDMggIABCABBCxAzIICC4QgAQQsQMyCwguEIAEELEDEIMBMgsILhCABBCxAxCDATILCC4QgAQQsQMQgwEyBQgAEIAEMggIABCABBCxAzIFCC4QgAQyBQgAEIAEOgsILhCABBDHARDRAzoLCC4QgAQQxwEQrwE6CQgAEIAEEAoQAToMCAAQsQMQgwEQChAqOgcIABCxAxAKOgcILhCxAxAKOgsIABCABBAKEAEQKjoJCC4QgAQQChABOg8ILhCABBDHARCvARAKEAE6CwguEIAEEAoQARAqOgcILhCABBAKOgsIABCABBCxAxCDAToOCC4QgAQQsQMQxwEQowI6CAgAELEDEIMBOgsILhCABBDHARCjAjoLCC4QsQMQxwEQowI6CAguELEDEIMBSgUIPBIBNEoECEEYAEoECEYYAFAAWP9MYMJVaAVwAHgAgAFmiAHfDJIBBDE3LjGYAQCgAQGwAQDAAQE&sclient=gws-wiz" target="_blank"><img src="img/google.png" alt="Гугл"></a>
+		</footer>
+	</body>
+</html>

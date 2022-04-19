@@ -1,0 +1,117 @@
+@import "null.css";
+
+.scorpion-vs-sub-zero {
+	/* селектор "Scorpion" */
+	color: #f4ca16;
+}
+
+.scorpion-vs-sub-zero {
+	/* селектор "Sub-zero" */
+	color: #0076ca;
+}
+
+p {
+	/* селектор "Liu_Kang" */
+	color: #da0f00;
+}
+
+.sonya {
+	/* селектор "Sonya"*/
+	color: #00b64c;
+}
+
+span.sonya {
+	/* селектор "Kano"*/
+	color: #f07427;
+}
+
+.liu-kang {
+	/* селектор "Liu Kang"*/
+	color: #000000;
+}
+
+#shang_tsung {
+	/* селектор "Shang Tsung"*/
+	color: #f07427;
+}
+
+.liu-kang.sonya {
+	/* селектор "Liu_Kang"*/
+	color: #4169e1;
+}
+
+.kitana1.kitana2 {
+	/* селектор "Reptile"*/
+	color: #00c843;
+}
+.kitana1 {
+	/* селектор "Kitana1"*/
+	color: #9457eb;
+}
+
+.kitana2 {
+	/* селектор "Kitana2"*/
+	color: #F4CA16;
+}
+
+#id-selector {
+	/* Селектор идентификатора */
+	color: #f07427;
+}
+
+h3 {
+	color: #3A4950;
+}
+
+a {
+	color: #9e00ff;
+}
+
+li a {
+	color: #0034ff;
+}
+
+[class*="story-mk__paragraph"] {
+	color: #0FE100;
+}
+
+.story-mk__paragraph-4,
+.story-mk__paragraph-5 {
+	color: #F4CA16;
+}
+
+.story-mk__paragraph-2 + p {
+	color:#22EEFF;
+}
+
+.story-mk__paragraph-4 p {
+	color: #FF69E1;
+}
+
+.story-mk__paragraph-5 span {
+	color: #00C0F0;
+}
+
+.story-mk__paragraph-6 > span {
+	color: #FF69E1;
+}
+
+.story-mk__paragraph-6 > span > span {
+	color: #8000FF;
+}
+
+.story-mk__paragraph-7 > span ~ span {
+	color: #E10E9B;
+}
+
+#ul-lvl-1 > li.lvl-2 > p.lvl-3 {
+	color: #E1A500;
+}
+
+.list-of-fighters ul {
+	color: #2AE1C3;
+}
+
+.list-of-fighters > ul > li > p {
+	color: #4169E1;
+}
